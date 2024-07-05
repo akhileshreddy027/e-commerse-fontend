@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durable Shoes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="hamberger">
+          <i id="hamberger" class="fa fa-bars"></i>
+          <i id="search" class="fa fa-search"></i>
+        </div>
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="user-actions">
+          <a href="#">Login</a>
+          <a href="#"><i class="fa fa-bag-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">BAGS</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+        <li><a href="#">LUGGAGES</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">LEATHER CRAFTS</a></li>
+        <li><a href="#">TRY & BUY @HOME</a></li>
+        <li><a href="#">PICKUP @STORE</a></li>
+        <li><a href="#">ONLINE SPECIAL</a></li>
+        <li class="login"><a href="#">login</a></li>
+      </ul>
+    </nav>
+
+    <div class="section">
+      <div class="section1">
+        <h3>hide filter</h3>
+      </div>
+      <div class="section2">
+        <h3>active filters :</h3>
+        <p>x size 40</p>
+        <p>x size 40</p>
+        <p>x size 40</p>
+        <p>x size 40</p>
+      </div>
+      <div class="section3">
+        <h3>sort by</h3>
+      </div>
+    </div>
+    <main>
+      <aside class="filters">
+        <div class="color">
+          <h3>
+            Colours <i class="fas fa-chevron-down" id="toggle-colors"></i>
+          </h3>
+        </div>
+        <ul id="color-list" class="hidden">
+          <li>
+            <input type="checkbox" id="black" /><label for="black"
+              ><span class="color-box" style="background-color: black"></span
+              >Black</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="brown" /><label for="brown"
+              ><span class="color-box" style="background-color: brown"></span
+              >Brown</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tan" /><label for="tan"
+              ><span class="color-box" style="background-color: tan"></span
+              >Tan</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="maroon" checked /><label for="maroon"
+              ><span class="color-box" style="background-color: maroon"></span
+              >Maroon</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="blue" /><label for="blue"
+              ><span class="color-box" style="background-color: blue"></span
+              >Blue</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="green" /><label for="green"
+              ><span class="color-box" style="background-color: green"></span
+              >Green</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="olive" /><label for="olive"
+              ><span class="color-box" style="background-color: olive"></span
+              >Olive</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="beige" /><label for="beige"
+              ><span class="color-box" style="background-color: beige"></span
+              >Beige</label
+            >
+          </li>
+        </ul>
+        <div class="color">
+          <h3>Price <i class="fas fa-chevron-down" id="toggle-price"></i></h3>
+        </div>
+        <ul id="price-list" class="hidden">
+          <li>
+            <input type="checkbox" id="price1" /><label for="price1"
+              >Rs. 0 To Rs. 1000</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="price2" /><label for="price2"
+              >Rs. 1001 To Rs. 2000</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="price3" /><label for="price3"
+              >Rs. 2001 To Rs. 3000</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="price4" checked /><label for="price4"
+              >Rs. 3001 To Rs. 4000</label
+            >
+          </li>
+        </ul>
+        <div class="color"><h3>Size</h3></div>
+        <div class="size-grid">
+          <div class="size-box">6</div>
+          <div class="size-box">7</div>
+          <div class="size-box">8</div>
+          <div class="size-box">9</div>
+          <div class="size-box">10</div>
+          <div class="size-box">11</div>
+        </div>
+
+        <div class="color">
+          <h3>
+            Categories
+            <i class="fas fa-chevron-down" id="toggle-categories"></i>
+          </h3>
+        </div>
+        <ul id="category-list" class="hidden">
+          <li>
+            <input type="checkbox" id="slipper" /><label for="slipper"
+              >Slipper</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="sandle" /><label for="sandle"
+              >Sandle</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="shoes" /><label for="shoes">Shoes</label>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="products">
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>
+          </p>
+        </div>
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>
+          </p>
+        </div>
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>
+          </p>
+        </div>
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>
+          </p>
+        </div>
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>)
+          </p>
+        </div>
+        <div class="product">
+          <img src="5.jpg" alt="Durable Hand Executive" />
+          <div class="product-likes">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <span class="color-box" style="background-color: black"></span>
+              <span class="color-box" style="background-color: red"></span>
+            </div>
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="product-info">
+            <h4>Durable Hand Executive</h4>
+            <span
+              >4.8 <i style="color: red; font-size: 14px" class="fa fa-star"></i
+            ></span>
+          </div>
+          <h4 class="bag">Bag</h4>
+          <p class="price">
+            Rs. 4999 <span class="original-price">Rs. 5999</span>
+            <span style="color: red">(20% OFF)</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="srcipt.js"></script>
+  </body>
+</html>
